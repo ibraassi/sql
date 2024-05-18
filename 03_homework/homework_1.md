@@ -1,3 +1,5 @@
+Homework is attached to pull request.
+
 # Homework 1: farmersmarket.db
 
 - Due on Thursday, May 16 at 11:59pm
