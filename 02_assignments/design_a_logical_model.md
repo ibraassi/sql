@@ -1,5 +1,7 @@
 # Assignment 1: Design a Logical Model
 
+The ERD and the customer_address tables are attached to the pull request.
+
 ## Question 1
 Create a logical model for a small bookstore. 📚
 
@@ -15,7 +17,7 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
+The architecture that will overwrite is type 1, and the architecture that will retain changes is type 2. There are privacy implications to the use of type 2 slowly changing dimensions where changes are retained. The bookstore keeps track of how a customer’s address has changed over time. This is an unnecessary violation of privacy when only the current address is really needed for the bookstore’s database.
 ```
 
 ## Question 4
@@ -23,7 +25,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
+The entities of the AdventureWorks schema are categorized by department. Also, there is a dbo schema that contains a build version table, a database log table, and an error log table. The build version table contains the current version number of the database. The database log table tracks all changes made to the database. The error log table tracks all errors in the database. Implementing these two changes to the bookstore ERD would be beneficial. 
 ```
 
 # Criteria
